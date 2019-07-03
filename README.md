@@ -1,2 +1,0 @@
-# demo
-a vue demo
