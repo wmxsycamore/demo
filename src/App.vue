@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ul>
+      <!--<li><a href="/">home</a></li>-->
+      <!--<li><a href="/helloWorld">helloworld</a></li>-->
+      <!--router-link不重新加载页面，性能好-->
+      <li><router-link to="/">home</router-link></li>
+      <li><router-link to='/helloWorld'>hello</router-link></li>
+    </ul>
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  // 局部注册
 
 export default {
   name: 'app',
+  // 局部注册
   components: {
-    HelloWorld
+
+  },
+  data(){
+    return {
+
+
+    }
+  },
+  methods:{
+
   }
 }
 </script>
